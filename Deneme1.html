@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="login-container">
+  <div class="login-box">
+
+    <h2 id="formTitle">Giriş Yap</h2>
+
+    <form id="loginForm" >
+
+      <div class="input-group">
+        <label>Kullanıcı Adı</label>
+        <input type="text" id="username" required>
+      </div>
+
+      <div class="input-group">
+        <label>E-posta</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="input-group password-group">
+        <label>Şifre</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" required>
+          <span id="togglePassword" class="eye-icon">
+            <svg id="eyeOpen" viewBox="0 0 24 24">
+                <path d="M12 5C6 5 2 12 2 12s4 7 10 7 10-7 10-7-4-7-10-7z"/>
+                <circle cx="12" cy="12" r="3"/>
+            </svg>
+
+            <svg id="eyeClosed" viewBox="0 0 24 24">
+                <path d="M2 2l20 20"/>
+                <path d="M12 5C6 5 2 12 2 12s4 7 10 7c2.5 0 4.7-1 6.5-2.5"/>
+            </svg>
+        </span>
+        </div>
+      </div>
+
+      <div class="extra-options">
+        <label>
+          <input type="checkbox"> Beni Hatırla
+        </label>
+        <span class="forgot">Şifremi Unuttum?</span>
+      </div>
+
+      <button type="submit">Giriş Yap</button>
+
+      <p class="signup-text">
+        Hesabın yok mu? <span id="goRegister">Kayıt Ol</span>
+      </p>
+
+    </form>
+
+    <form id="registerForm" class="hidden">
+
+  
+
+  <div class="input-group">
+    <label>Kullanıcı Adı</label>
+    <input type="text" id="regUsername" required>
+  </div>
+
+  <div class="input-group">
+    <label>E-posta</label>
+    <input type="email" id="regEmail" required>
+  </div>
+
+  <div class="input-group password-group">
+    <label>Şifre</label>
+    <div class="password-wrapper">
+      <input type="password" id="regPassword" required>
+    </div>
+  </div>
+
+  <div class="input-group password-group">
+    <label>Şifre Tekrar</label>
+    <div class="password-wrapper">
+      <input type="password" id="regPassword2" required>
+    </div>
+  </div>
+
+  <button type="submit">Kayıt Ol</button>
+
+  <p class="signup-text">
+    Zaten hesabın var mı? <span id="goLogin">Giriş Yap</span>
+  </p>
+
+</form>
+    
+
+  </div>
+</div>
+
+<script src="Deneme1.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel</title>
+  <style>
+    body {
+      background: #050507;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial;
+    }
+
+    .panel {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #ffbb00;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="panel">
+  <h1>Hoş Geldin 👋</h1>
+  <p>Başarıyla giriş yaptın</p>
+  <button onclick="logout()">Çıkış Yap</button>
+</div>
+
+
+<script>
+function logout(){
+  window.location.href = "Deneme1.html";
+}
+</script>
+
+</body>
+</html>
